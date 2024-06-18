@@ -196,7 +196,7 @@ export default function Footer1() {
                       </div>
                       <div className="content">
                         <span>Phone No</span>
-                        <Link href="/tel:+18619899598">+1 (861) 989 9598</Link>
+                        <Link href="tel:+18619899598">+1 (861) 989 9598</Link>
                       </div>
                     </div>
                   </div>
