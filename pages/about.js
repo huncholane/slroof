@@ -1,3 +1,4 @@
+import testimonialData from "@/components/data/testimonialData";
 import VideoPopup from "@/components/elements/VideoPopup";
 import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
@@ -13,6 +14,35 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 };
+
+function TestimonialItem(props) {
+  return (
+    <div className="testimonial-item-two">
+      <div className="testimonial-avatar-two">
+        <img src="/assets/img/images/h2_testi_avatar01.png" alt="" />
+      </div>
+      <div className="testimonial-content-two">
+        <div className="content-top">
+          <div className="icon">
+            <i className="fas fa-quote-left" />
+          </div>
+          <div className="rating">
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+            <i className="fas fa-star" />
+          </div>
+        </div>
+        <p>{props.quote}</p>
+        <div className="content-bottom">
+          <h4 className="title">{props.name}</h4>
+          <span>{props.profession}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function About() {
   return (
@@ -265,108 +295,12 @@ export default function About() {
                 <div className="col-lg-10">
                   <div className="testimonial-inner">
                     <Slider {...settings} className="testimonial-active-two">
-                      <div className="testimonial-item-two">
-                        <div className="testimonial-avatar-two">
-                          <img
-                            src="/assets/img/images/h2_testi_avatar01.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="testimonial-content-two">
-                          <div className="content-top">
-                            <div className="icon">
-                              <i className="fas fa-quote-left" />
-                            </div>
-                            <div className="rating">
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                            </div>
-                          </div>
-                          <p>
-                            There are many varation of paissages of Lorem as the
-                            Ipum available but our majority have sufferied
-                            alterations in some form, by our by injected hsumour
-                            randomised worids which don't looks even slightly
-                            there as believable. If you going to use a passage
-                            of Lorem Ipsum.
-                          </p>
-                          <div className="content-bottom">
-                            <h4 className="title">Darrell Steward</h4>
-                            <span>Roofing Expert</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="testimonial-item-two">
-                        <div className="testimonial-avatar-two">
-                          <img
-                            src="/assets/img/images/h2_testi_avatar02.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="testimonial-content-two">
-                          <div className="content-top">
-                            <div className="icon">
-                              <i className="fas fa-quote-left" />
-                            </div>
-                            <div className="rating">
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                            </div>
-                          </div>
-                          <p>
-                            Lorem Ipsum are many varation of paissages of Lorem
-                            as the Ipum available but our majority have
-                            sufferied alterations in some form, by our by
-                            injected hsumour randomised worids which don't looks
-                            even slightly there as believable. If you going to
-                            use a passage of Lorem Ipsum.
-                          </p>
-                          <div className="content-bottom">
-                            <h4 className="title">Robert C. Simmons</h4>
-                            <span>Roofing Expert</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="testimonial-item-two">
-                        <div className="testimonial-avatar-two">
-                          <img
-                            src="/assets/img/images/h2_testi_avatar03.png"
-                            alt=""
-                          />
-                        </div>
-                        <div className="testimonial-content-two">
-                          <div className="content-top">
-                            <div className="icon">
-                              <i className="fas fa-quote-left" />
-                            </div>
-                            <div className="rating">
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                              <i className="fas fa-star" />
-                            </div>
-                          </div>
-                          <p>
-                            Lorem Ipsum are many varation of paissages of Lorem
-                            as the Ipum available but our majority have
-                            sufferied alterations in some form, by our by
-                            injected hsumour randomised worids which don't looks
-                            even slightly there as believable. If you going to
-                            use a passage of Lorem Ipsum.
-                          </p>
-                          <div className="content-bottom">
-                            <h4 className="title">Karikoka Ahli</h4>
-                            <span>Executive Manager</span>
-                          </div>
-                        </div>
-                      </div>
+                      {testimonialData.map((item, index) => (
+                        <TestimonialItem
+                          key={`testimonial-${index}`}
+                          {...item}
+                        />
+                      ))}
                     </Slider>
                   </div>
                 </div>
