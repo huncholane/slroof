@@ -10,6 +10,25 @@ function phoneToLink(phone) {
   return `tel:${phone}`;
 }
 
+function SkillBar({ title, value }) {
+  return (
+    <div className="progress-item">
+      <h5 className="title">{title}</h5>
+      <div className="progress">
+        <div
+          className="progress-bar"
+          role="progressbar"
+          style={{ width: `${value}%` }}
+          aria-valuenow={value}
+          aria-valuemin={0}
+          aria-valuemax={100}
+        />
+        <span>{value}%</span>
+      </div>
+    </div>
+  );
+}
+
 export default function TeamDetails(props) {
   const leadingParagraphs = props.paragraphs.slice(
     0,
@@ -103,62 +122,9 @@ export default function TeamDetails(props) {
                     ))}
                     <p className="info-two">{trailingParagraph}</p>
                     <div className="progress-wrap">
-                      <div className="progress-item">
-                        <h5 className="title">Software Development</h5>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "88%" }}
-                            aria-valuenow={88}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          />
-                          <span>88%</span>
-                        </div>
-                      </div>
-                      <div className="progress-item">
-                        <h5 className="title">UL / UX Design</h5>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "80%" }}
-                            aria-valuenow={80}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          />
-                          <span>80%</span>
-                        </div>
-                      </div>
-                      <div className="progress-item">
-                        <h5 className="title">Web Development</h5>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "95%" }}
-                            aria-valuenow={95}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          />
-                          <span>95%</span>
-                        </div>
-                      </div>
-                      <div className="progress-item">
-                        <h5 className="title">SEO Optimization</h5>
-                        <div className="progress">
-                          <div
-                            className="progress-bar"
-                            role="progressbar"
-                            style={{ width: "90%" }}
-                            aria-valuenow={90}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                          />
-                          <span>90%</span>
-                        </div>
-                      </div>
+                      {props.skills.map((skill, index) => (
+                        <SkillBar key={`skill-${index}`} {...skill} />
+                      ))}
                     </div>
                     <div className="guidelines-wrap">
                       <div className="row">
@@ -172,35 +138,12 @@ export default function TeamDetails(props) {
                         </div>
                         <div className="col-lg-6">
                           <div className="guidelines-content">
-                            <h4 className="title">Career Guidelines</h4>
-                            <p>
-                              As a web developer, you could work for a company
-                              or agency, hoyse aor as a freelancer taking on
-                              projects for individual clients. Your tasks will
-                              vary depending on ki tumi your work situation, but
-                              day-to-day responsibilities might generally
-                              include.
-                            </p>
+                            <h4 className="title">{props.sidenote.title}</h4>
+                            <p>{props.sidenote.content}</p>
                             <ul className="list-wrap">
-                              <li>
-                                Designing user interfaces and navigation menus
-                              </li>
-                              <li>
-                                Writing and reviewing code for sites, typically
-                                HTML, XML, or JavaScript
-                              </li>
-                              <li>
-                                Troubleshooting problems with performance or
-                                user experience
-                              </li>
-                              <li>
-                                Integrating multimedia content onto a site
-                              </li>
-                              <li>
-                                Collaborating with designers, developers, and
-                                stakeholders
-                              </li>
-                              <li>Testing web applications</li>
+                              {props.sidenote.quotes.map((quote, index) => (
+                                <li key={`quote-${index}`}>{quote}</li>
+                              ))}
                             </ul>
                           </div>
                         </div>

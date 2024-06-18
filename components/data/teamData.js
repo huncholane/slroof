@@ -10,10 +10,29 @@ const teamData = [
     position: "Founder",
     exp: "30 Years",
     email: "shaun@gmail.com",
+    phone: "+1 (816) 898-9598",
     location: "Kansas City, MO",
     paragraphs: [
       "At Shaun Lake Roofing, our commitment to excellence drives everything we do. We strive to deliver the highest quality roofing solutions, using top-grade materials and advanced techniques to ensure your roof is both durable and beautiful. Our experienced team works diligently to meet and exceed your expectations, providing exceptional customer service and top-notch craftsmanship on every project.",
       "We are proud to be a family-owned and operated business, and we treat every customer like a member of our family. We take the time to listen to your needs and concerns, and we work closely with you to develop a customized roofing solution that meets your specific requirements. Whether you need a minor repair or a complete roof replacement, you can count on Shaun Lake Roofing to deliver superior results at a competitive price.",
+    ],
+    skills: [
+      {
+        title: "Roofing",
+        value: 95,
+      },
+      {
+        title: "Customer Service",
+        value: 90,
+      },
+      {
+        title: "Quality",
+        value: 100,
+      },
+      {
+        title: "Craftsmanship",
+        value: 100,
+      },
     ],
     sidenote: {
       img: "/assets/img/team/team_details02.jpg",
