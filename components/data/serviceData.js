@@ -29,7 +29,7 @@ export class ServiceData {
         highlight: "areas",
         title: "Siding Corner",
         description: "We specialize in siding corner installations.",
-        icon: "/assets/img/icon/service_icon04.svg",
+        icon: "/assets/img/icon/services_icon01.svg",
       },
       {
         id: "roofing-layers",
@@ -37,21 +37,21 @@ export class ServiceData {
         title: "Roofing Layers",
         description:
           "We offer multiple layers of roofing for added protection.",
-        icon: "/assets/img/icon/service",
+        icon: "/assets/img/icon/services_icon02.svg",
       },
       {
         id: "roof-repair",
         highlight: "areas",
         title: "Roof Repair",
         description: "We can repair any type of roof damage.",
-        icon: "/assets/img/icon/service_icon06.svg",
+        icon: "/assets/img/icon/services_icon03.svg",
       },
       {
         id: "roof-renovation",
         highlight: "areas",
         title: "Roof Renovation",
         description: "We can renovate your roof to look brand new.",
-        icon: "/assets/img/icon/service_icon07.svg",
+        icon: "/assets/img/icon/services_icon04.svg",
       },
       {
         id: "roof-maintenance",
@@ -59,14 +59,14 @@ export class ServiceData {
         title: "Roof Maintenance",
         description:
           "We offer maintenance services to keep your roof in top shape.",
-        icon: "/assets/img/icon/service_icon08.svg",
+        icon: "/assets/img/icon/services_icon05.svg",
       },
       {
         id: "roof-animation",
         highlight: "areas",
         title: "Roof Animation",
         description: "We can create a 3D animation of your roof.",
-        icon: "/assets/img/icon/service_icon09.svg",
+        icon: "/assets/img/icon/services_icon06.svg",
       },
     ];
   }
