@@ -1,6 +1,7 @@
 import VideoPopup from "@/components/elements/VideoPopup";
 import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
+import Team1 from "@/components/sections/Team1";
 import Link from "next/link";
 import Slider from "react-slick";
 const settings = {
@@ -67,10 +68,14 @@ export default function About() {
                     </h2>
                   </div>
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majori have suffered alteration in some
-                    form, by injected humour, or randomised word which don't
-                    look even slightly believable.
+                    At Shaun Lake Roofing, our commitment to excellence drives
+                    everything we do. We strive to deliver the highest quality
+                    roofing solutions, using top-grade materials and advanced
+                    techniques to ensure your roof is both durable and
+                    beautiful. Our experienced team works diligently to meet and
+                    exceed your expectations, providing unparalleled service and
+                    results. Trust us to bring excellence to every project,
+                    every time.
                   </p>
                   <div className="about-list">
                     <ul className="list-wrap">
@@ -246,176 +251,7 @@ export default function About() {
           data-background="/assets/img/bg/area_bg05.jpg"
         >
           {/* team-area */}
-          <section className="inner-team-area pb-90">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-8">
-                  <div className="section-title text-center mb-60">
-                    <span className="sub-title">Professional Team</span>
-                    <h2 className="title">Professional Team Member</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="row justify-content-center">
-                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                  <div className="team-item">
-                    <div className="team-thumb">
-                      <Link href="/team-details">
-                        <img src="/assets/img/team/team_img01.jpg" alt="" />
-                      </Link>
-                      <div className="team-social">
-                        <ul className="list-wrap">
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-facebook-f" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-linkedin-in" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-twitter" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-instagram" />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="team-content">
-                      <h2 className="title">
-                        <Link href="/team-details">Robert C. Simmons</Link>
-                      </h2>
-                      <span>Roof Engineer</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                  <div className="team-item">
-                    <div className="team-thumb">
-                      <Link href="/team-details">
-                        <img src="/assets/img/team/team_img02.jpg" alt="" />
-                      </Link>
-                      <div className="team-social">
-                        <ul className="list-wrap">
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-facebook-f" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-linkedin-in" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-twitter" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-instagram" />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="team-content">
-                      <h2 className="title">
-                        <Link href="/team-details">Christopher Jhon</Link>
-                      </h2>
-                      <span>Roof Engineer</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                  <div className="team-item">
-                    <div className="team-thumb">
-                      <Link href="/team-details">
-                        <img src="/assets/img/team/team_img03.jpg" alt="" />
-                      </Link>
-                      <div className="team-social">
-                        <ul className="list-wrap">
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-facebook-f" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-linkedin-in" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-twitter" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-instagram" />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="team-content">
-                      <h2 className="title">
-                        <Link href="/team-details">Karikoka Ahli</Link>
-                      </h2>
-                      <span>Roof Engineer</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                  <div className="team-item">
-                    <div className="team-thumb">
-                      <Link href="/team-details">
-                        <img src="/assets/img/team/team_img04.jpg" alt="" />
-                      </Link>
-                      <div className="team-social">
-                        <ul className="list-wrap">
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-facebook-f" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-linkedin-in" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-twitter" />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="#">
-                              <i className="fab fa-instagram" />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="team-content">
-                      <h2 className="title">
-                        <Link href="/team-details">Dickerson MH</Link>
-                      </h2>
-                      <span>Roof Engineer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Team1 />
           {/* team-area-end */}
           {/* testimonial-area */}
           <section className="inner-testimonial-area parallax pb-120 position-relative">

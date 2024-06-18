@@ -23,8 +23,8 @@ const teamData = [
     twitter: "#",
     facebook: "#",
     instagram: "#",
-    name: "Software Developer",
-    position: "CEO",
+    name: "Lane Henslee",
+    position: "Software Developer",
   },
   {
     img: "/assets/img/team/h2_team_img04.jpg",

@@ -55,10 +55,13 @@ export default function About1() {
                   </h2>
                 </div>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majori have suffered alteration in some
-                  form, by injected humour, or randomised word which don't look
-                  even slightly believable.
+                  At Shaun Lake Roofing, our commitment to excellence drives
+                  everything we do. We strive to deliver the highest quality
+                  roofing solutions, using top-grade materials and advanced
+                  techniques to ensure your roof is both durable and beautiful.
+                  Our experienced team works diligently to meet and exceed your
+                  expectations, providing unparalleled service and results.
+                  Trust us to bring excellence to every project, every time.
                 </p>
                 <div className="about-list">
                   <ul className="list-wrap">
