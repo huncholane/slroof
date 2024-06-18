@@ -1,6 +1,15 @@
 import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
 import Link from "next/link";
+
+function emailToLink(email) {
+  return `mailto:${email}`;
+}
+
+function phoneToLink(phone) {
+  return `tel:${phone}`;
+}
+
 export default function TeamDetails(props) {
   return (
     <>
