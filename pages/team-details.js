@@ -66,14 +66,18 @@ export default function TeamDetails(props) {
                           <i className="fas fa-envelope" />
                           E-mail:
                         </span>
-                        {props.email}
+                        <Link href={emailToLink(props.email)}>
+                          {props.email}
+                        </Link>
                       </li>
                       <li>
                         <span>
                           <i className="fas fa-phone-alt" />
                           Phone:
                         </span>
-                        {props.phone}
+                        <Link href={phoneToLink(props.phone)}>
+                          {props.phone}
+                        </Link>
                       </li>
                       <li>
                         <span>

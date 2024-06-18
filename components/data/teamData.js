@@ -67,6 +67,44 @@ const teamData = [
     instagram: "#",
     name: "Lane Henslee",
     position: "Software Developer",
+    email: "huncho@hygo.ai",
+    phone: "+1 (910) 691-8245",
+    paragraphs: [
+      "Lane Henslee is a highly skilled software developer with extensive experience in Python AI development, Rust backend systems, Python Django web development, Next.js web development, Linux server management, and database management with PostgreSQL and MongoDB. His technological expertise plays a crucial role in driving the innovation and efficiency at Shaun Lake Roofing, ensuring that our operations are as cutting-edge as our roofing solutions.",
+      "Lane's proficiency in Python AI development has enabled Shaun Lake Roofing to implement advanced predictive maintenance systems. By analyzing data from past projects and current roof conditions, these AI-driven systems can forecast potential issues before they become costly problems, allowing us to offer proactive solutions to our clients. This not only saves time and money but also enhances the longevity and reliability of the roofs we install and maintain.",
+      "In addition to his AI expertise, Lane's skills in Rust backend and Python Django web development have been instrumental in creating robust, scalable, and secure web applications for our company. These applications streamline project management, client communications, and service delivery, making it easier for our team to coordinate and execute roofing projects efficiently. Lane's work ensures that both our clients and staff have access to seamless, user-friendly platforms that enhance the overall experience.",
+      "Lane also manages our Linux servers, ensuring that our systems run smoothly and securely. His experience with PostgreSQL and MongoDB databases guarantees that all our data is handled with the highest standards of integrity and efficiency. By leveraging these technologies, Lane helps Shaun Lake Roofing maintain an edge in the competitive roofing industry, providing our clients with reliable, data-driven insights and services.",
+      "Overall, Lane Henslee’s technical acumen is a cornerstone of Shaun Lake Roofing's success, blending traditional craftsmanship with modern technology to deliver unparalleled roofing solutions. His dedication to innovation and excellence reflects the core values of our company, ensuring we stay ahead in an ever-evolving industry.",
+    ],
+    skills: [
+      {
+        title: "Python AI Development",
+        value: 95,
+      },
+      {
+        title: "Rust Backend Systems",
+        value: 90,
+      },
+      {
+        title: "Python Django Web Development",
+        value: 100,
+      },
+      {
+        title: "Next.js Web Development",
+        value: 100,
+      },
+      {
+        title: "Linux Server Management",
+        value: 100,
+      },
+      {
+        title: "Database Management",
+        value: 100,
+      },
+    ],
+    sidenote: {
+        title: 
+    }
   },
   {
     id: "xander-andre",
