@@ -32,7 +32,7 @@ function ServiceItem(props) {
           >
             <Link href={aboutLink}>{props.title}</Link>
           </h2>
-          <h2 className="number">{props.number}</h2>
+          <h2 className="number">0{props.number}</h2>
         </div>
         <div
           className="services-overlay-content"
@@ -90,7 +90,7 @@ export default function Services1() {
               <ServiceItem
                 key={`service-${index}`}
                 {...service}
-                number={index}
+                number={index + 1}
                 handleToggle={handleToggle}
                 isActive={isActive}
               />
