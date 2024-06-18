@@ -56,7 +56,60 @@ const teamData = [
     facebook: "#",
     instagram: "#",
     name: "Zack Stevens",
-    position: "Co-Founder",
+    position: "Business Analyst",
+    exp: "15 Years",
+    email: "zack@monkewifhat.com",
+    phone: "+1 (816) 665-4838",
+    location: "Austin, TX",
+    paragraphs: [
+      "Zack Stevens brings a wealth of financial acumen and sales prowess to Shaun Lake Roofing. With a degree in finance and business analysis from Kansas State University and 15 years of experience in managing stock portfolios and excelling in sales positions, Zack is a key asset to our team.",
+      "Zack’s deep understanding of financial management ensures that our company’s resources are allocated efficiently and effectively, contributing to our sustained growth and stability. His strategic insights help us make informed decisions, optimize our budget, and maximize profitability.",
+      "In sales, Zack’s experience and natural talent shine through. He has a proven track record of building strong client relationships and driving sales growth. His ability to understand customer needs and provide tailored solutions ensures that our clients receive the best possible service and value.",
+    ],
+    skills: [
+      {
+        title: "Financial Management",
+        value: 95,
+      },
+      {
+        title: "Stock Portfolio Management",
+        value: 90,
+      },
+      {
+        title: "Business Analysis",
+        value: 92,
+      },
+      {
+        title: "Sales Strategy Development",
+        value: 94,
+      },
+      {
+        title: "Client Relationship Building",
+        value: 97,
+      },
+      {
+        title: "Negotiation Skills",
+        value: 91,
+      },
+      {
+        title: "Customer Service Excellence",
+        value: 96,
+      },
+    ],
+    sidenote: {
+      img: "/assets/img/team/team_details03.jpg",
+      title:
+        "Meet Zack Stevens: Financial and Sales Expertise at Shaun Lake Roofing",
+      content:
+        "Zack Stevens is a seasoned finance and sales professional with over 15 years of experience in managing stock portfolios and driving sales. His expertise in financial management and strategic sales tactics contributes significantly to optimizing budgets, increasing revenue, and fostering strong client relationships at Shaun Lake Roofing.",
+      quotes: [
+        "Smart financial management is the cornerstone of a thriving business.",
+        "Understanding client needs is key to delivering exceptional service.",
+        "Effective budget allocation drives growth and stability.",
+        "Building strong relationships is the heart of successful sales.",
+        "Strategic insights turn financial data into business success.",
+      ],
+    },
   },
   {
     id: "lane-henslee",
@@ -67,8 +120,10 @@ const teamData = [
     instagram: "#",
     name: "Lane Henslee",
     position: "Software Developer",
+    exp: "7 Years",
     email: "huncho@hygo.ai",
     phone: "+1 (910) 691-8245",
+    location: "Austin, TX",
     paragraphs: [
       "Lane Henslee is a highly skilled software developer with extensive experience in Python AI development, Rust backend systems, Python Django web development, Next.js web development, Linux server management, and database management with PostgreSQL and MongoDB. His technological expertise plays a crucial role in driving the innovation and efficiency at Shaun Lake Roofing, ensuring that our operations are as cutting-edge as our roofing solutions.",
       "Lane's proficiency in Python AI development has enabled Shaun Lake Roofing to implement advanced predictive maintenance systems. By analyzing data from past projects and current roof conditions, these AI-driven systems can forecast potential issues before they become costly problems, allowing us to offer proactive solutions to our clients. This not only saves time and money but also enhances the longevity and reliability of the roofs we install and maintain.",
@@ -103,8 +158,18 @@ const teamData = [
       },
     ],
     sidenote: {
-        title: 
-    }
+      img: "/assets/img/team/team_details03.jpg",
+      title: "Meet Lane Henslee: The Tech Backbone of Shaun Lake Roofing",
+      content:
+        "Lane's expertise in AI and web development drives our innovation.",
+      quotes: [
+        "Using AI, we can predict roofing issues before they become problems.",
+        "Efficient backend systems are key to streamlined project management.",
+        "A secure and smooth-running server is the backbone of our operations.",
+        "Data-driven insights help us provide the best roofing solutions.",
+        "Integrating modern technology with traditional craftsmanship is our edge.",
+      ],
+    },
   },
   {
     id: "xander-andre",
