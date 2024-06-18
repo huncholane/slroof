@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import testimonialData from "../data/testimonialData";
 const settings = {
   dots: true,
   infinite: true,
@@ -9,7 +10,27 @@ const settings = {
   slidesToScroll: 1,
 };
 
-function TestimonialItem(props) {}
+function TestimonialItem(props) {
+  return (
+    <div className="testimonial-item">
+      <div className="testimonial-icon">
+        <i className="fas fa-quote-left" />
+      </div>
+      <div className="testimonial-content">
+        <p>{props.quote}</p>
+      </div>
+      <div className="testimonial-avatar">
+        <div className="avatar-thumb">
+          <img src="/assets/img/images/testi_avatar01.png" alt="" />
+        </div>
+        <div className="avatar-content">
+          <h6 className="title">{props.name}</h6>
+          <p>{props.profession}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Testimonial1() {
   return (
@@ -33,87 +54,9 @@ export default function Testimonial1() {
                   </h2>
                 </div>
                 <Slider {...settings} className="testimonial-active">
-                  <div className="testimonial-item">
-                    <div className="testimonial-icon">
-                      <i className="fas fa-quote-left" />
-                    </div>
-                    <div className="testimonial-content">
-                      <p>
-                        There are many varation of paissages of Lorem as the
-                        Ipum available but our majority have sufferied
-                        alterations in some form, by our by injected hsumour
-                        randomised worids which don't looks even slightly there
-                        as believable. If you going to use a passage of Lorem
-                        Ipsum.
-                      </p>
-                    </div>
-                    <div className="testimonial-avatar">
-                      <div className="avatar-thumb">
-                        <img
-                          src="/assets/img/images/testi_avatar01.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="avatar-content">
-                        <h6 className="title">Darrell Steward</h6>
-                        <p>Roofing Expert</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-item">
-                    <div className="testimonial-icon">
-                      <i className="fas fa-quote-left" />
-                    </div>
-                    <div className="testimonial-content">
-                      <p>
-                        There are many varation of paissages of Lorem as the
-                        Ipum available but our majority have sufferied
-                        alterations in some form, by our by injected hsumour
-                        randomised worids which don't looks even slightly there
-                        as believable. If you going to use a passage of Lorem
-                        Ipsum.
-                      </p>
-                    </div>
-                    <div className="testimonial-avatar">
-                      <div className="avatar-thumb">
-                        <img
-                          src="/assets/img/images/testi_avatar01.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="avatar-content">
-                        <h6 className="title">Darrell Steward</h6>
-                        <p>Roofing Expert</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-item">
-                    <div className="testimonial-icon">
-                      <i className="fas fa-quote-left" />
-                    </div>
-                    <div className="testimonial-content">
-                      <p>
-                        There are many varation of paissages of Lorem as the
-                        Ipum available but our majority have sufferied
-                        alterations in some form, by our by injected hsumour
-                        randomised worids which don't looks even slightly there
-                        as believable. If you going to use a passage of Lorem
-                        Ipsum.
-                      </p>
-                    </div>
-                    <div className="testimonial-avatar">
-                      <div className="avatar-thumb">
-                        <img
-                          src="/assets/img/images/testi_avatar01.png"
-                          alt=""
-                        />
-                      </div>
-                      <div className="avatar-content">
-                        <h6 className="title">Darrell Steward</h6>
-                        <p>Roofing Expert</p>
-                      </div>
-                    </div>
-                  </div>
+                  {testimonialData.map((item, index) => (
+                    <TestimonialItem key={`testimonial-${index}`} {...item} />
+                  ))}
                 </Slider>
               </div>
             </div>
