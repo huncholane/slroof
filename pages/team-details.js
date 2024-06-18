@@ -11,6 +11,11 @@ function phoneToLink(phone) {
 }
 
 export default function TeamDetails(props) {
+  const leadingParagraphs = props.paragraphs.slice(
+    0,
+    props.paragraphs.length - 1
+  );
+  const trailingParagraph = props.paragraphs[props.paragraphs.length - 1];
   return (
     <>
       <Layout breadcrumbTitle={props.name}>
@@ -91,25 +96,12 @@ export default function TeamDetails(props) {
                 <div className="col-lg-12">
                   <div className="team-details-content">
                     <h3 className="title">Personal Experience and Skills</h3>
-                    <p className="info-one">
-                      Since joining Sotcox in 2009 .Web design encompasses many
-                      different skills and disciplines in the production and
-                      maintenance of websites. The different area of web design
-                      ki je bolbo as include web graphic design; user interface
-                      design (UI design); authoring, including standardised code
-                      and proprietary amra kothai jabo assoftware; user
-                      experience design (UX design); and search engine
-                      optimization. Often many individuals will work in teams
-                      covering different aspects of the design process,
-                      including writing markup.
-                    </p>
-                    <p className="info-two">
-                      The term "web design" is normally used to describe the
-                      design process relating to the front-end (client side)
-                      design of a ki holo design ki valo hoy nai website
-                      including writing markup. Web design partially overlaps
-                      web engineering in the broader scope of web development.
-                    </p>
+                    {leadingParagraphs.map((paragraph, index) => (
+                      <p className="info-one" key={`paragraph-${index}`}>
+                        {paragraph}
+                      </p>
+                    ))}
+                    <p className="info-two">{trailingParagraph}</p>
                     <div className="progress-wrap">
                       <div className="progress-item">
                         <h5 className="title">Software Development</h5>
