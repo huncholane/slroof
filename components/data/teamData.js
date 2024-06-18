@@ -60,7 +60,7 @@ const teamData = [
     exp: "15 Years",
     email: "zack@monkewifhat.com",
     phone: "+1 (816) 665-4838",
-    location: "Austin, TX",
+    location: "Kansas City, MO",
     paragraphs: [
       "Zack Stevens brings a wealth of financial acumen and sales prowess to Shaun Lake Roofing. With a degree in finance and business analysis from Kansas State University and 15 years of experience in managing stock portfolios and excelling in sales positions, Zack is a key asset to our team.",
       "Zack’s deep understanding of financial management ensures that our company’s resources are allocated efficiently and effectively, contributing to our sustained growth and stability. His strategic insights help us make informed decisions, optimize our budget, and maximize profitability.",
@@ -179,7 +179,63 @@ const teamData = [
     facebook: "#",
     instagram: "#",
     name: "Xander Andre",
-    position: "Marketing Manager",
+    position: "Marketing Official",
+    exp: "20 Years",
+    email: "N/A",
+    phone: "N/A",
+    location: "Kansas City, MO",
+    paragraphs: [
+      "Xander Andre excels as a community manager and marketing expert, bringing a wealth of experience and strategic insight to his role. With a passion for fostering vibrant communities, Xander is adept at building and nurturing relationships with customers, stakeholders, and online followers. His expertise extends to creating engaging content, managing social media channels, and orchestrating campaigns that resonate with target audiences.",
+      "In his capacity as a community manager, Xander understands the importance of active engagement and communication. He ensures that community members feel valued and connected through consistent interaction and timely responses. By monitoring discussions, addressing concerns, and facilitating meaningful dialogue, Xander cultivates a supportive environment where community members can thrive and contribute positively to the brand's reputation.",
+      "As a marketing expert, Xander leverages his understanding of consumer behavior and market trends to develop impactful strategies. Whether launching new products or promoting existing services, he crafts compelling narratives that align with the brand's identity and resonate with its audience. Through data-driven analysis and creative execution, Xander drives visibility and growth, enhancing the brand's market position and achieving measurable results.",
+      "Overall, Xander Andre's blend of community management expertise and marketing prowess makes him an invaluable asset. His dedication to building strong communities and implementing effective marketing strategies contributes significantly to the success and reputation of the organizations he serves.",
+    ],
+    skills: [
+      {
+        title: "Community Management",
+        value: 95,
+      },
+      {
+        title: "Social Media Marketing",
+        value: 92,
+      },
+      {
+        title: "Content Creation and Management",
+        value: 90,
+      },
+      {
+        title: "Engagement Strategy Development",
+        value: 93,
+      },
+      {
+        title: "Customer Relationship Management (CRM)",
+        value: 94,
+      },
+      {
+        title: "Analytics and Data Interpretation",
+        value: 88,
+      },
+      {
+        title: "Brand Development",
+        value: 89,
+      },
+    ],
+    sidenote: {
+      img: "/assets/img/team/team_details04.jpg",
+      title:
+        "Xander Andre: Cultivating Communities and Driving Marketing Excellence",
+      content:
+        "Xander Andre is a skilled community manager and marketing expert. His proficiency lies in cultivating engaged communities and leveraging strategic marketing initiatives to enhance brand presence and drive growth.",
+      quotes: [
+        "Building communities isn't just about engagement; it's about creating connections that last.",
+        "Effective marketing begins with understanding and empathizing with your audience.",
+        "Content should educate, inspire, and resonate with your community.",
+        "Community feedback is invaluable—it guides us toward continuous improvement.",
+        "Success in marketing is measured by the relationships we build and nurture.",
+        "Data tells a story; it's our job to listen, interpret, and respond.",
+        "Community growth isn't just about numbers; it's about fostering meaningful connections.",
+      ],
+    },
   },
 ];
 

@@ -93,9 +93,6 @@ export default function About() {
                       </li>
                     </ul>
                   </div>
-                  <Link href="/about" className="btn">
-                    Learn More
-                  </Link>
                 </div>
               </div>
             </div>
