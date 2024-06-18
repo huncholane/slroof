@@ -10,12 +10,14 @@ function TeamMember({
   name,
   position,
 }) {
+  const lowerNameWithDash = name.toLowerCase().replace(/\s/g, "-");
+  const aboutLink = `/team/${lowerNameWithDash}`;
   return (
     <>
       <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
         <div className="team-item-three">
           <div className="team-thumb-three">
-            <Link href="/team-details">
+            <Link href={aboutLink}>
               <img src={img} alt="" />
             </Link>
             <div className="team-social-three">
@@ -45,7 +47,7 @@ function TeamMember({
           </div>
           <div className="team-content-three">
             <h2 className="title">
-              <Link href="/team-details">{name}</Link>
+              <Link href={aboutLink}>{name}</Link>
             </h2>
             <span>{position}</span>
           </div>

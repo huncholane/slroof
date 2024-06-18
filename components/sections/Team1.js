@@ -2,13 +2,15 @@ import Link from "next/link";
 import teamData from "../data/teamData";
 
 function TeamMember(props) {
+  const lowerNameWithDash = props.name.toLowerCase().replace(/\s/g, "-");
+  const aboutLink = `/team/${lowerNameWithDash}`;
   return (
     <>
       <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
         <div className="team-item">
           <div className="team-thumb">
-            <Link href="/team-details">
-              <img src="/assets/img/team/team_img01.jpg" alt="" />
+            <Link href={aboutLink}>
+              <img src={props.img} alt="" />
             </Link>
             <div className="team-social">
               <ul className="list-wrap">
@@ -37,7 +39,7 @@ function TeamMember(props) {
           </div>
           <div className="team-content">
             <h2 className="title">
-              <Link href="/team-details">{props.name}</Link>
+              <Link href={aboutLink}>{props.name}</Link>
             </h2>
             <span>{props.position}</span>
           </div>
