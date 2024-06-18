@@ -1,5 +1,6 @@
 const teamData = [
   {
+    id: "shaun-lake",
     img: "/assets/img/team/h2_team_img01.jpg",
     linkedIn: "#",
     twitter: "#",
@@ -29,6 +30,7 @@ const teamData = [
     },
   },
   {
+    id: "zack-stevens",
     img: "/assets/img/team/h2_team_img02.jpg",
     linkedIn: "#",
     twitter: "#",
@@ -38,6 +40,7 @@ const teamData = [
     position: "Co-Founder",
   },
   {
+    id: "lane-henslee",
     img: "/assets/img/team/h2_team_img03.jpg",
     linkedIn: "#",
     twitter: "#",
@@ -47,6 +50,7 @@ const teamData = [
     position: "Software Developer",
   },
   {
+    id: "xander-andre",
     img: "/assets/img/team/h2_team_img04.jpg",
     linkedIn: "#",
     twitter: "#",
